@@ -22,7 +22,7 @@ function showBtn(){
     const randomNumber = Math.floor(Math.random() * 5) + 1;
     const classBtn = "clase-"+randomNumber;
     buttonMoving.classList.add(classBtn);
-    countSeconds();
+    countmiliseconds();
 }
 
 function removeLastPlayer(){
@@ -59,30 +59,30 @@ function startGame(){
 }
 document.getElementById("to-game-btn").addEventListener("click", startGame);
 
-function countSeconds(){
-    let seconds = 0;
+function countmiliseconds(){
+    let miliseconds = 0;
     let stop = false;
 
-  function addingSeconds() {
+  function addingmiliseconds() {
     if(!stop){
-        seconds++;
-    console.log(seconds);
-    setTimeout(addingSeconds, 1000);
+        miliseconds++;
+    console.log(miliseconds);
+    setTimeout(addingmiliseconds, 1);
     }
   }
 
-  addingSeconds();
+  addingmiliseconds();
   document.getElementById("click-to-win").addEventListener("click", ()=>{
     stop = true;
-    localStorage.setItem("seconds", JSON.stringify(seconds));
+    localStorage.setItem("miliseconds", JSON.stringify(miliseconds));
     divGame = document.getElementById("btn-game-display");
     yourScore = document.getElementById("your-score");
     reactionTime = document.getElementById("total-time");
     divGame.classList.add("hide");
     yourScore.classList.remove("hide");
-    reactionTime.textContent = localStorage.getItem("seconds");
+    reactionTime.textContent = localStorage.getItem("miliseconds");
     const currentlyPlaying = document.querySelector(".currently-playing");
-    currentlyPlaying.textContent = localStorage.getItem("seconds") + " seconds";
+    currentlyPlaying.textContent = localStorage.getItem("miliseconds") + " miliseconds";
 
   });
 }
