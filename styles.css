@@ -1,0 +1,138 @@
+body{
+    background: radial-gradient(circle, rgba(255,151,185,1) 50%, rgba(143,5,50,1) 100%);
+}
+h1{
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-family: 'Silkscreen', sans-serif;
+}
+
+h2, h3, .username-text{
+    color: white;
+    font-weight: bold;
+    font-family: 'Silkscreen', sans-serif;
+}
+
+.div-padre{
+    display: flex;
+    justify-content: space-around;
+}
+
+#player-name{
+    background-color: #f6a644;
+    border: 5px solid #d96b03;
+    padding: 3rem;
+    border-radius: 8px;
+}
+
+.buttons-game{
+    padding: 0.5rem 2rem;
+    background-color: #f70880;
+    color: white;
+    font-family: 'Silkscreen', sans-serif;
+    font-weight: bold;
+    margin-top: 5rem;
+    border-radius: 8px;
+}
+.block{
+    display: block;
+    margin: auto;
+}
+#player-name{
+    flex-basis: 60%;
+    text-align: center;
+}
+
+.user-scores{
+    flex-basis: 25%;
+    text-align: left;
+    height: 32rem;
+    width: 8rem;
+    background-color: #f6a644;
+    border: 5px solid #d96b03;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.username-class{
+    margin-bottom: 1rem;
+}
+
+.hide{
+    display: none;
+}
+
+.show-button{
+    flex-basis: 60%;
+    text-align: center;
+    background-color: #f6a644;
+    border: 5px solid #d96b03;
+    border-radius: 8px;
+    height: 10rem;
+}
+
+.click-btn{
+    width: 12rem;
+    height: 4rem;
+}
+
+.div-click-here{
+    position: relative;
+}
+
+.ready-message{
+    margin-top: 3rem;
+}
+
+.username-in-score{
+    font-weight: bold;
+    font-size:large;
+    color: white;
+    font-family: 'Silkscreen', sans-serif;
+}
+
+.currently-playing, .result-text{
+    color: white;
+    font-family: 'Silkscreen', sans-serif;
+}
+
+.clase-1{
+    width: 6rem;
+    height: 6rem;
+    position: absolute;
+    top: 0;
+    left: 3rem;
+}
+
+.clase-2{
+    width: 10rem;
+    height: 5rem;
+    position: absolute;
+    bottom: 4;
+    left: 7rem;
+}
+
+.clase-3{
+    width: 5rem;
+    height: 9rem;
+    position: absolute;
+    top: 0;
+    right: 3rem;
+}
+
+.clase-4{
+    width: 0.1rem;
+    height: 0.1rem;
+    position: absolute;
+    top: 50%;
+    left: 15rem;
+}
+
+.clase-5{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 5;
+    left: 3rem;
+}

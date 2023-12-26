@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Stop Game</h1>
+    <div class="div-padre">
+        <div id="player-name">
+            <h2>Choose a username</h2>
+            <p class="username-text">Username</p>
+            <input id="input-username" class="block username-class" type="text" required>
+            <input type="submit" class="block buttons-game" id="btn-to-start" value="Start">
+        </div>
+        <div class="hide show-button" id="div-start-game">
+            <button id="to-game-btn" class="buttons-game">Start Game</button>
+        </div>
+        <div class="hide show-button" id="game-display">
+            <h2 class="ready-message">Get ready...</h2>
+        </div>
+        <div class="hide show-button div-click-here" id="btn-game-display">
+            <button id="click-to-win" class="buttons-game">Click here</button>
+        </div>
+        <div class="hide show-button" id="your-score">
+            <h2>Your Score</h2>
+            <p class="result-text">Your reaction time was <span id="total-time"></span> seconds.</p>
+            <button id="play-again-btn" class="buttons-game">Play again</button>
+            </div>
+        <div>
+            <div class="user-scores">
+                <h3>User scores</h3>
+                <div id="user-scores">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
